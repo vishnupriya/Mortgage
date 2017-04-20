@@ -1,0 +1,20 @@
+PODS:
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
+  - NVActivityIndicatorView (3.2)
+  - SnapKit (3.0.2)
+
+DEPENDENCIES:
+  - Charts (~> 3.0)
+  - NVActivityIndicatorView (~> 3.2)
+  - SnapKit (~> 3.0)
+
+SPEC CHECKSUMS:
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
+  NVActivityIndicatorView: 28942c18ced111a6a3ce5e6f5b27d9d40116d639
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+
+PODFILE CHECKSUM: 2bc45972d49f6c6f2aaa49ea1d7e59e988d5fdef
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7293AE326BE56D20AECFFD033B2BFB76D2F58E64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7293AE326BE56D20AECFFD033B2BFB76D2F58E64" : 9223372036854775807,
+    "980046F91D7F4B92D18A598594072F48F6192BC1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DF6DBCDB-E969-49A8-B8AA-106909BEA7F8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7293AE326BE56D20AECFFD033B2BFB76D2F58E64" : "MortgageCalc\/",
+    "980046F91D7F4B92D18A598594072F48F6192BC1" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyMortgage",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyMortgage.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/vpriya\/MyMortgage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7293AE326BE56D20AECFFD033B2BFB76D2F58E64"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:vishnupriya\/Mortgage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "980046F91D7F4B92D18A598594072F48F6192BC1"
+    }
+  ]
+}

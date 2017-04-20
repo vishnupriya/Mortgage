@@ -1,0 +1,6 @@
+framework module Pods_MyMortgageTests {
+  umbrella header "Pods-MyMortgageTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
