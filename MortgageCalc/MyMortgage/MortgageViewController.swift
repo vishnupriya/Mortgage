@@ -121,10 +121,10 @@ class MortgageViewController: UIViewController {
         tableBtn.backgroundColor = UIColor().borderColor
         graphBtn.backgroundColor = UIColor().primaryBackgroundColor
         graphBtn.isSelected = false
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            let value = UIInterfaceOrientation.portrait.rawValue
-            UIDevice.current.setValue(value, forKey: "orientation")
-        }
+//        if UIDevice.current.userInterfaceIdiom == .phone {
+//            let value = UIInterfaceOrientation.portrait.rawValue
+//            UIDevice.current.setValue(value, forKey: "orientation")
+//        }
         updateView()
     }
 
@@ -134,10 +134,10 @@ class MortgageViewController: UIViewController {
         graphBtn.backgroundColor = UIColor().borderColor
         tableBtn.backgroundColor = UIColor().primaryBackgroundColor
         
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            let value = UIInterfaceOrientation.landscapeLeft.rawValue
-            UIDevice.current.setValue(value, forKey: "orientation")
-        }
+//        if UIDevice.current.userInterfaceIdiom == .phone {
+//            let value = UIInterfaceOrientation.landscapeLeft.rawValue
+//            UIDevice.current.setValue(value, forKey: "orientation")
+//        }
         updateView()
     }
     
@@ -164,9 +164,7 @@ class MortgageViewController: UIViewController {
         viewController.view.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-//        viewController.view.frame = view.bounds
-//        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
+
         // Notify Child View Controller
         viewController.didMove(toParentViewController: self)
     }

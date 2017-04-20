@@ -55,11 +55,22 @@ class RootViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            let value = UIInterfaceOrientation.portrait.rawValue
-            UIDevice.current.setValue(value, forKey: "orientation")
+        UIDevice.current.setValue(Int(UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
+//        if UIDevice.current.userInterfaceIdiom == .phone {
+//            let value = UIInterfaceOrientation.portrait.rawValue
+//            UIDevice.current.setValue(value, forKey: "orientation")
+//        }
+    }
+    
+    override func viewWillDisappear(_ animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController) {
+            UIDevice.current.setValue(Int(UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
         }
     }
+    
+    func canRotate() -> Void {}
     
 //    func viewWillTransitionToSize(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 //        if UIDevice.current.orientation.isLandscape {
@@ -68,14 +79,17 @@ class RootViewController: UIViewController {
 //            print("Portrait")
 //        }
 //    }
-//    
+    
 //    override var shouldAutorotate:Bool {
 //        return true
 //    }
-
-    
-//    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-//        return UIInterfaceOrientationMask.Portrait
+//
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//        return UIInterfaceOrientationMask.portrait
+//    }
+//    
+//    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+//        return UIInterfaceOrientation.portrait
 //    }
     
     func setupView() {

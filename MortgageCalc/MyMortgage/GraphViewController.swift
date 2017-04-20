@@ -79,11 +79,6 @@ class GraphViewController: UIViewController, UIScrollViewDelegate, ChartViewDele
         setBarChart(dataPoints: mortgageInterestRates, values: monthlyPaymentForDifferentRates)
      }
     
-    //override func viewWillAppear(_ animated: Bool) {
-      //  super.viewWillAppear(animated)
-        //let value = UIInterfaceOrientation.landscapeLeft.rawValue
-        //UIDevice.current.setValue(value, forKey: "orientation")
-    //}
     
     func setupView() {
         scrollView = UIScrollView()
@@ -214,16 +209,12 @@ class GraphViewController: UIViewController, UIScrollViewDelegate, ChartViewDele
 
         if (!didSetupConstraints) {
             scrollView.snp.makeConstraints { make in
-                make.top.equalTo(view.snp.top)
-                make.left.equalTo(view.snp.left)
-                make.right.equalTo(view.snp.right)
-                make.bottom.equalTo(view.snp.bottom)
+                make.edges.equalTo(view.snp.edges)
             }
+            
             contentView.snp.makeConstraints { make in
-                make.top.equalTo(scrollView.snp.top)
-                make.left.equalTo(view.snp.left)
-                make.right.equalTo(view.snp.right)
-                make.bottom.equalTo(view.snp.bottom)
+                make.edges.equalTo(scrollView.snp.edges)
+                make.width.equalTo(view.snp.width)
             }
             
             mortgageDetailsHeaderLbl.snp.makeConstraints({ make in
@@ -240,7 +231,6 @@ class GraphViewController: UIViewController, UIScrollViewDelegate, ChartViewDele
             
             resultLabel.snp.makeConstraints { make in
                 make.top.equalTo(mortgageDetailsLbl.snp.bottom).offset(10)
-//                make.centerX.equalTo(contentView.snp.centerX)
                 make.left.equalTo(contentView).offset(20)
                 make.right.equalTo(contentView).offset(-20)
             }
@@ -255,11 +245,7 @@ class GraphViewController: UIViewController, UIScrollViewDelegate, ChartViewDele
             mortgageBalanceLbl.snp.makeConstraints { make in
                 make.top.equalTo(mortgageBalanceView.snp.top).offset(20)
                 make.centerX.equalTo(mortgageBalanceView.snp.centerX)
-
-//                make.left.equalTo(mortgageBalanceView).offset(20)
-//                make.right.equalTo(mortgageBalanceView).offset(-20)
             }
-            
             
             lineChartView.snp.makeConstraints { make in
                 make.top.equalTo(mortgageBalanceLbl.snp.bottom).offset(20)
@@ -279,11 +265,7 @@ class GraphViewController: UIViewController, UIScrollViewDelegate, ChartViewDele
             monthlyMortgageLbl.snp.makeConstraints { make in
                 make.top.equalTo(monthlyMortgageView.snp.top).offset(20)
                 make.centerX.equalTo(monthlyMortgageView.snp.centerX)
-                
-                //                make.left.equalTo(mortgageBalanceView).offset(20)
-                //                make.right.equalTo(mortgageBalanceView).offset(-20)
             }
-            
             
             barChartView.snp.makeConstraints { make in
                 make.top.equalTo(monthlyMortgageLbl.snp.bottom).offset(20)

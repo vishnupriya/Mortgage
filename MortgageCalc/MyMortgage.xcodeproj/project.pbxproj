@@ -22,6 +22,7 @@
 		017D22A01D6A3BBD00451D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017D229E1D6A3BBD00451D31 /* LaunchScreen.storyboard */; };
 		017D22AB1D6A3BBD00451D31 /* MyMortgageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D22AA1D6A3BBD00451D31 /* MyMortgageTests.swift */; };
 		017D22B61D6A3BBD00451D31 /* MyMortgageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D22B51D6A3BBD00451D31 /* MyMortgageUITests.swift */; };
+		01BEA9711EA95A9000F3994F /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEA9701EA95A9000F3994F /* UINavigationController+Extension.swift */; };
 		01E330AC1E3810CB00D9AECA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E330AB1E3810CB00D9AECA /* TableViewController.swift */; };
 		01E330B11E38155C00D9AECA /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E330B01E38155C00D9AECA /* CustomCollectionViewLayout.swift */; };
 		01E330B31E3815BC00D9AECA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E330B21E3815BC00D9AECA /* TableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		017D22B11D6A3BBD00451D31 /* MyMortgageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMortgageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		017D22B51D6A3BBD00451D31 /* MyMortgageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMortgageUITests.swift; sourceTree = "<group>"; };
 		017D22B71D6A3BBD00451D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BEA9701EA95A9000F3994F /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		01E330AB1E3810CB00D9AECA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		01E330B01E38155C00D9AECA /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
 		01E330B21E3815BC00D9AECA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				01E330B01E38155C00D9AECA /* CustomCollectionViewLayout.swift */,
 				016352F41E2DE5F300AB7A8D /* UIColor+Extension.swift */,
 				016352F61E2E6C9800AB7A8D /* UIFont+Extension.swift */,
+				01BEA9701EA95A9000F3994F /* UINavigationController+Extension.swift */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				01E330AC1E3810CB00D9AECA /* TableViewController.swift in Sources */,
 				016A436F1E040AFC00DB3C7A /* GraphViewController.swift in Sources */,
 				017D22931D6A3BBD00451D31 /* AppDelegate.swift in Sources */,
+				01BEA9711EA95A9000F3994F /* UINavigationController+Extension.swift in Sources */,
 				016A436D1E030AE300DB3C7A /* RootViewController+Layout.swift in Sources */,
 				016352F71E2E6C9800AB7A8D /* UIFont+Extension.swift in Sources */,
 				017D229B1D6A3BBD00451D31 /* MyMortgage.xcdatamodeld in Sources */,
